@@ -66,7 +66,13 @@ const SESSION_KEY = 'modulo7_guia_session_v1';
 // Para añadir materiales: { title: 'Nombre del material', description: 'Descripción', href: 'ruta/archivo.pdf' }.
 // Los enlaces se resuelven desde la carpeta donde se encuentre este index.html.
 const CHAPTERS = [
-  { number: 1, title: 'Precauciones de seguridad', english: 'Safety precautions', active: true, materials: [], exams: [] },
+  { number: 1, title: 'Precauciones de seguridad', english: 'Safety precautions', active: true, materials: [], exams: [
+    { title: 'Parte 1', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap01_01_Precauciones_de_seguridad' },
+    { title: 'Parte 2', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap01_02_Precauciones_de_seguridad' },
+    { title: 'Parte 3', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap01_03_Precauciones_de_seguridad' },
+    { title: 'Parte 4', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap01_04_Precauciones_de_seguridad' },
+    { title: 'Parte 5', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap01_05_Precauciones_de_seguridad' }
+  ] },
   { number: 2, title: 'Prácticas de taller', english: 'Workshop practices', active: true, materials: [], exams: [
     { title: 'Parte 1', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_01_Practicas_de_taller' },
     { title: 'Parte 2', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_02_Practicas_de_taller' },
