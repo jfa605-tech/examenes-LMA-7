@@ -67,7 +67,13 @@ const SESSION_KEY = 'modulo7_guia_session_v1';
 // Los enlaces se resuelven desde la carpeta donde se encuentre este index.html.
 const CHAPTERS = [
   { number: 1, title: 'Precauciones de seguridad', english: 'Safety precautions', active: true, materials: [], exams: [] },
-  { number: 2, title: 'Prácticas de taller', english: 'Workshop practices', active: true, materials: [], exams: [] },
+  { number: 2, title: 'Prácticas de taller', english: 'Workshop practices', active: true, materials: [], exams: [
+    { title: 'Parte 1', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_01_Practicas_de_taller' },
+    { title: 'Parte 2', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_02_Practicas_de_taller' },
+    { title: 'Parte 3', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_03_Practicas_de_taller' },
+    { title: 'Parte 4', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_04_Practicas_de_taller' },
+    { title: 'Parte 5', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap02_05_Practicas_de_taller' }
+  ] },
   { number: 3, title: 'Herramientas', english: 'Tooling', active: true, materials: [], exams: [
     { title: 'Herramientas manuales y sujeción', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap03_01_Herramientas_manuales.html' },
     { title: 'Llaves, torque y metrología de aplicación', description: '20 preguntas · Examen autocorregible', href: 'Examen_Cap03_02_Herramientas_manuales.html' },
