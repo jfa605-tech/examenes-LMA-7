@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a3a">
+<meta name="description" content="Módulo 7. Prácticas de mantenimiento. Materiales y exámenes de repaso, solo como guía de estudio.">
+<title>Módulo 7 · Prácticas de mantenimiento</title>
+<style>
+:root{color-scheme:light;--ink:#173044;--muted:#657887;--deep:#102a3a;--teal:#087f78;--mint:#e5f5f1;--gold:#d3ad69;--line:#dce6e3;--canvas:#f2f6f4;--shadow:0 18px 55px rgba(18,48,62,.07)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 8% 0%,rgba(211,173,105,.12),transparent 34rem),radial-gradient(ellipse at 90% 8%,rgba(22,163,148,.09),transparent 30rem),var(--canvas);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,sans-serif}
+[hidden]{display:none!important}button,input,a{font:inherit}button,a,input{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #76bdb2;outline-offset:4px}h1,h2,h3,p{margin-top:0}button{border:0}.brand{display:flex;align-items:center;gap:12px}.brand-mark{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:13px;background:var(--deep);color:#fff;font-weight:800;letter-spacing:.04em}.brand-title{font-size:14px;font-weight:750}.brand-sub{font-size:11px;color:var(--muted);margin-top:3px}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}.button{display:inline-flex;justify-content:center;align-items:center;gap:10px;border-radius:12px;padding:12px 17px;font-weight:700;line-height:1.3;min-height:44px;transition:background .15s ease}.button-primary{background:var(--teal);color:white}.button-primary:hover{background:#066b65}.button-outline{background:transparent;border:1px solid var(--line);color:var(--muted)}.button-outline:hover{background:#fff}.study-note{display:flex;align-items:center;gap:10px;color:#586e78;font-size:13px;line-height:1.5;padding:12px 15px;border-left:3px solid var(--gold);background:rgba(255,255,255,.65);border-radius:0 10px 10px 0}.study-note p{margin:0}
+.login-shell{min-height:100vh;display:grid;place-items:center;padding:30px 20px}.login-card{width:100%;max-width:470px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:36px;box-shadow:var(--shadow)}.login-card .brand{margin-bottom:30px}.login-card h1{font-size:35px;letter-spacing:-.035em;line-height:1.1;margin-bottom:8px;color:var(--deep)}.login-subtitle{font-size:14px;letter-spacing:.04em;font-weight:650;color:var(--deep);margin-bottom:16px}.login-intro{color:var(--muted);font-size:14px;line-height:1.6;margin-bottom:22px}.login-form{margin-top:25px}.field{margin-bottom:18px}.field label{display:block;font-size:13px;font-weight:700;margin-bottom:8px}.field input{width:100%;height:47px;padding:11px 13px;border:1px solid #cbdad5;border-radius:10px;color:var(--deep);background:#fcfefd;font-size:16px}.password-wrap{position:relative}.password-wrap input{padding-right:80px}.password-toggle{position:absolute;right:3px;top:3px;height:41px;padding:0 12px;border-radius:8px;background:transparent;color:var(--teal);font-size:12px;font-weight:750}.password-toggle:hover{background:var(--mint)}.login-form .button-primary{width:100%;margin-top:3px}.form-error{color:#a63e37;font-size:13px;line-height:1.5;margin-bottom:15px}.login-card .study-note{font-size:12px;background:#f8faf9;margin-top:24px}.login-footnote{font-size:11px;line-height:1.6;color:#71818a;margin:16px 0 0;text-align:center}
+.container{width:min(1160px,100%);margin:0 auto;padding:0 28px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:84px;border-bottom:1px solid rgba(23,48,68,.1)}.page-content{padding-top:34px}.hero{margin-bottom:23px}.hero h1{font-size:clamp(30px,4.4vw,43px);line-height:1.12;letter-spacing:-.04em;color:var(--deep);margin-bottom:16px}.hero h1 span{display:block;font-size:clamp(18px,2.6vw,27px);letter-spacing:.005em;line-height:1.3;margin-top:8px;font-weight:650}.hero-description{font-size:15px;color:var(--muted);line-height:1.6;max-width:700px;margin-bottom:0}.portal-study-note{margin-bottom:28px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 15px}.section-heading h2,.section-heading h3{font-size:20px;letter-spacing:-.02em;color:var(--deep);margin:0}.section-heading p{font-size:12px;color:var(--muted);margin:0}.chapters-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.chapter-card{display:flex;align-items:center;gap:16px;text-align:left;min-width:0;width:100%;padding:19px;background:#fff;border:1px solid var(--line);border-radius:17px;color:var(--ink);transition:background .15s ease,border-color .15s ease,transform .15s ease}.chapter-card:not(:disabled):hover{border-color:#90c9bd;background:#fbfffd;transform:translateY(-2px)}.chapter-badge{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--mint);color:var(--teal);font-size:17px;font-weight:800}.chapter-copy{display:block;min-width:0;flex:1}.chapter-label{display:block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:5px}.chapter-name{display:block;font-size:15px;line-height:1.4;font-weight:700;color:var(--deep)}.chapter-english{display:block;font-size:11px;color:var(--muted);line-height:1.4;margin-top:4px}.chapter-end{flex:none;display:flex;flex-direction:column;align-items:center;gap:8px}.chapter-status{font-size:10px;font-weight:700;color:var(--teal);background:var(--mint);padding:5px 8px;border-radius:99px}.chapter-arrow{font-size:18px;color:var(--teal)}.chapter-card:disabled{background:#eaeeec;border-color:#dce2df;box-shadow:none}.chapter-card:disabled .chapter-badge{color:#7c888d;background:#dce3df}.chapter-card:disabled .chapter-name{color:#6f7c81}.chapter-card:disabled .chapter-label,.chapter-card:disabled .chapter-english{color:#7d888d}.chapter-card:disabled .chapter-status{background:#dfe5e2;color:#738078}.chapter-card:disabled .chapter-arrow{color:#8f9b96}
+.back-button{margin-bottom:23px}.chapter-header h2{font-size:clamp(24px,3.3vw,33px);line-height:1.25;letter-spacing:-.025em;margin-bottom:9px;color:var(--deep);max-width:850px}.chapter-header>p:last-child{font-size:14px;color:var(--muted);line-height:1.5;margin-bottom:26px}.resource-section{margin-top:27px}.resources-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.resource-card{display:flex;flex-direction:column;align-items:flex-start;gap:12px;text-decoration:none;background:white;border:1px solid var(--line);border-radius:17px;padding:21px;min-width:0;transition:border-color .15s ease,transform .15s ease}.resource-card:hover{border-color:#8bc6b9;transform:translateY(-2px)}.resource-number{font-size:10px;font-weight:800;letter-spacing:.1em;color:var(--teal);text-transform:uppercase}.resource-title{font-size:17px;font-weight:700;line-height:1.4;color:var(--deep)}.resource-description{font-size:12px;color:var(--muted);line-height:1.5}.resource-action{font-size:12px;font-weight:750;color:var(--teal);margin-top:auto;padding-top:4px}.empty-state{padding:31px;background:white;border:1px solid var(--line);border-radius:19px}.empty-symbol{width:47px;height:47px;border-radius:14px;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:23px;margin-bottom:18px}.empty-state h3{font-size:20px;color:var(--deep);letter-spacing:-.02em;margin-bottom:10px}.empty-state p{font-size:14px;color:var(--muted);line-height:1.6;margin:0;max-width:610px}.site-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;line-height:1.5;color:#74848d;border-top:1px solid var(--line);padding:21px 0 25px;margin-top:32px}.noscript{max-width:600px;margin:25px auto;padding:20px;background:#fff;border:1px solid var(--line);border-radius:14px;line-height:1.6}
+@media(max-width:800px){.chapters-grid{grid-template-columns:1fr}.container{padding:0 20px}.chapter-card{min-height:104px}.hero h1 span{max-width:600px}.page-content{padding-top:28px}}
+@media(max-width:600px){.resources-grid{grid-template-columns:1fr}.container{padding:0 15px}.topbar{min-height:74px}.topbar .button{font-size:12px;padding:10px 12px}.brand-title{font-size:12px}.brand-sub{font-size:10px}.brand-mark{width:39px;height:39px;border-radius:11px}.brand{gap:9px}.hero h1{font-size:30px}.hero h1 span{font-size:18px}.hero-description{font-size:13px}.section-heading{align-items:flex-start}.section-heading h2,.section-heading h3{font-size:18px}.section-heading p{font-size:11px;text-align:right}.chapter-card{padding:15px 12px;gap:11px}.chapter-badge{width:37px;height:40px;font-size:14px;border-radius:11px}.chapter-name{font-size:14px}.chapter-english{font-size:10px}.chapter-end{gap:6px}.chapter-status{font-size:9px;padding:5px 6px}.chapter-label{font-size:9px}.study-note{font-size:12px}.login-shell{padding:18px 14px}.login-card{padding:28px 22px;border-radius:20px}.login-card h1{font-size:31px}.login-subtitle{font-size:12px}.empty-state{padding:24px}.chapter-header h2{font-size:25px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<noscript><p class="noscript">Activa JavaScript en tu navegador para acceder a la guía y abrir los capítulos.</p></noscript>
+<section id="loginView" class="login-shell" aria-labelledby="loginTitle">
+  <div class="login-card">
+    <div class="brand"><div class="brand-mark" aria-hidden="true">M7</div><div><div class="brand-title">Guía de estudio</div><div class="brand-sub">Materiales y autoevaluación</div></div></div>
+    <h1 id="loginTitle">MÓDULO 7</h1>
+    <p class="login-subtitle">PRÁCTICAS DE MANTENIMIENTO</p>
+    <p class="login-intro">Introduce el usuario y la contraseña para acceder a los capítulos, materiales y exámenes de repaso.</p>
+    <form id="loginForm" class="login-form">
+      <div class="field"><label for="username">Usuario</label><input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required></div>
+      <div class="field"><label for="password">Contraseña</label><div class="password-wrap"><input id="password" name="password" type="password" autocomplete="current-password" required><button id="togglePassword" class="password-toggle" type="button" aria-label="Mostrar contraseña" aria-pressed="false">Mostrar</button></div></div>
+      <p id="loginError" class="form-error" role="alert" hidden>Usuario o contraseña incorrectos. Inténtalo de nuevo.</p>
+      <button class="button button-primary" type="submit">Entrar a la guía <span aria-hidden="true">→</span></button>
+    </form>
+    <aside class="study-note"><p><strong>Solo como guía de estudio.</strong></p></aside>
+  </div>
+</section>
+<div id="portalView" hidden>
+  <div class="container">
+    <header class="topbar"><div class="brand"><div class="brand-mark" aria-hidden="true">M7</div><div><div class="brand-title">Módulo 7</div><div class="brand-sub">Prácticas de mantenimiento</div></div></div><button id="logoutButton" class="button button-outline" type="button">Cerrar sesión</button></header>
+    <main class="page-content">
+      <div class="study-note portal-study-note"><p><strong>Solo como guía de estudio.</strong> Materiales y ejercicios para repasar el temario.</p></div>
+      <section id="overviewView" aria-labelledby="overviewTitle">
+        <div class="hero"><p class="eyebrow">Materiales y autoevaluación</p><h1 id="overviewTitle" tabindex="-1">MÓDULO 7<span>PRÁCTICAS DE MANTENIMIENTO</span></h1><p class="hero-description">Selecciona un capítulo para consultar sus materiales y exámenes. Los capítulos en gris se habilitarán más adelante.</p></div>
+        <div class="section-heading"><h2>Capítulos</h2><p>18 capítulos · 3 habilitados</p></div>
+        <nav id="chaptersGrid" class="chapters-grid" aria-label="Capítulos del módulo 7"></nav>
+      </section>
+      <section id="chapterView" aria-labelledby="chapterTitle" hidden>
+        <button id="backButton" class="button button-outline back-button" type="button"><span aria-hidden="true">←</span> Todos los capítulos</button>
+        <header class="chapter-header"><p id="chapterNumber" class="eyebrow"></p><h2 id="chapterTitle" tabindex="-1"></h2><p id="chapterEnglish"></p></header>
+        <div id="emptyChapter" class="empty-state" hidden><div class="empty-symbol" aria-hidden="true">⋯</div><h3>Materiales en preparación</h3><p>Este capítulo está habilitado. Aquí encontrarás sus materiales de estudio y exámenes cuando se añadan.</p></div>
+        <section id="materialsSection" class="resource-section" hidden><div class="section-heading"><h3>Materiales de estudio</h3></div><div id="materialsList" class="resources-grid"></div></section>
+        <section id="examsSection" class="resource-section" hidden><div class="section-heading"><h3>Exámenes de repaso</h3><p id="examsCount"></p></div><div id="examsList" class="resources-grid"></div></section>
+      </section>
+    </main>
+    <footer class="site-footer"><span>Módulo 7 · Prácticas de mantenimiento</span><span>Solo como guía de estudio.</span></footer>
+  </div>
+</div>
+<script>
+'use strict';
+// Acceso básico para un HTML estático. No protege los archivos ni sus enlaces directos.
+// Cambia estos datos si deseas usar otro acceso compartido.
+const ACCESS = { username: 'alumno', password: 'modulo7' };
+const SESSION_KEY = 'modulo7_guia_session_v1';
+// Para añadir materiales: { title: 'Nombre del material', description: 'Descripción', href: 'ruta/archivo.pdf' }.
+// Los enlaces se resuelven desde la carpeta donde se encuentre este index.html.
+const CHAPTERS = [
+  { number: 1, title: 'Precauciones de seguridad', english: 'Safety precautions', active: true, materials: [], exams: [] },
+  { number: 2, title: 'Prácticas de taller', english: 'Workshop practices', active: true, materials: [], exams: [] },
+  { number: 3, title: 'Herramientas', english: 'Tooling', active: true, materials: [], exams: [
+    { title: 'Herramientas manuales y sujeción', description: '20 preguntas · Examen autocorregible', href: 'Examenes_20_preguntas/Examen_01_Herramientas_manuales.html' },
+    { title: 'Llaves, torque y metrología de aplicación', description: '20 preguntas · Examen autocorregible', href: 'Examenes_20_preguntas/Examen_02_Llaves_y_torque.html' },
+    { title: 'Herramientas de corte, sierras, limas y escariadores', description: '20 preguntas · Examen autocorregible', href: 'Examenes_20_preguntas/Examen_03_Herramientas_de_corte.html' },
+    { title: 'Taladrado, brocas y maquinaria de taller', description: '20 preguntas · Examen autocorregible', href: 'Examenes_20_preguntas/Examen_04_Taladrado_y_maquinaria.html' },
+    { title: 'Medición de precisión y pruebas eléctricas', description: '20 preguntas · Examen autocorregible', href: 'Examenes_20_preguntas/Examen_05_Medicion_y_pruebas_electricas.html' }
+  ] },
+  { number: 4, title: 'Planos', english: 'Drawings', active: false, materials: [], exams: [] },
+  { number: 5, title: 'Ajustes y tolerancias', english: 'Adjust & tolerances', active: false, materials: [], exams: [] },
+  { number: 6, title: 'Sistemas de interconexión de cableado eléctrico', english: 'EWIS', active: false, materials: [], exams: [] },
+  { number: 7, title: 'Remachado', english: 'Riveting', active: false, materials: [], exams: [] },
+  { number: 8, title: 'Tuberías y mangueras', english: 'Pipes and hoses', active: false, materials: [], exams: [] },
+  { number: 9, title: 'Muelles', english: 'Springs', active: false, materials: [], exams: [] },
+  { number: 10, title: 'Rodamientos', english: 'Bearings', active: false, materials: [], exams: [] },
+  { number: 11, title: 'Transmisiones', english: 'Transmissions', active: false, materials: [], exams: [] },
+  { number: 12, title: 'Cables de control', english: 'Control cables', active: false, materials: [], exams: [] },
+  { number: 13, title: 'Manipulación de materiales', english: 'Material handling', active: false, materials: [], exams: [] },
+  { number: 14, title: 'Peso y centrado', english: 'Weight and balance', active: false, materials: [], exams: [] },
+  { number: 15, title: 'Manipulación y almacenamiento de aeronaves', english: 'Aircraft handling and storage', active: false, materials: [], exams: [] },
+  { number: 16, title: 'Técnicas de desmontaje, inspección, reparación y montaje', english: 'Disassembly, inspection, repair and assembly techniques', active: false, materials: [], exams: [] },
+  // El capítulo 17 no figura en la imagen: se usa el título del temario de esta conversación.
+  { number: 17, title: 'Eventos anormales', english: 'Abnormal events', active: false, materials: [], exams: [] },
+  { number: 18, title: 'Procedimientos de mantenimiento', english: 'Maintenance procedures', active: false, materials: [], exams: [] }
+];
+const byId = id => document.getElementById(id);
+let authenticated = false;
+function readSession() { try { return sessionStorage.getItem(SESSION_KEY) === 'open'; } catch { return false; } }
+function rememberSession(open) { try { if(open) sessionStorage.setItem(SESSION_KEY,'open'); else sessionStorage.removeItem(SESSION_KEY); } catch {} }
+function makeNode(tag, className, text) {
+  const node=document.createElement(tag);
+  if(className) node.className=className;
+  if(text!==undefined) node.textContent=text;
+  return node;
+}
+function renderChapterCards() {
+  const grid=byId('chaptersGrid'); grid.replaceChildren();
+  for(const chapter of CHAPTERS) {
+    const card=makeNode('button','chapter-card');
+    card.type='button'; card.disabled=!chapter.active;
+    card.setAttribute('aria-label','Capítulo '+chapter.number+'. '+chapter.title+'. '+(chapter.active?'Abrir capítulo':'No habilitado'));
+    const badge=makeNode('span','chapter-badge',String(chapter.number).padStart(2,'0'));
+    badge.setAttribute('aria-hidden','true');
+    const copy=makeNode('span','chapter-copy');
+    copy.append(makeNode('span','chapter-label','Capítulo '+chapter.number),makeNode('span','chapter-name',chapter.title),makeNode('span','chapter-english',chapter.english));
+    const end=makeNode('span','chapter-end');
+    end.append(makeNode('span','chapter-status',chapter.active?'Disponible':'Próximamente'));
+    const arrow=makeNode('span','chapter-arrow',chapter.active?'→':'—'); arrow.setAttribute('aria-hidden','true'); end.append(arrow);
+    card.append(badge,copy,end);
+    if(chapter.active) card.addEventListener('click',()=>{window.location.hash='capitulo-'+chapter.number;});
+    grid.append(card);
+  }
+}
+function renderResources(list,items,kind) {
+  list.replaceChildren();
+  items.forEach((item,index)=>{
+    const link=makeNode('a','resource-card');
+    link.href=item.href; link.target='_blank'; link.rel='noopener';
+    link.setAttribute('aria-label',item.title+'. Abrir en una nueva pestaña');
+    link.append(
+      makeNode('span','resource-number',kind==='examen'?'Examen '+(index+1):'Material de estudio'),
+      makeNode('span','resource-title',item.title),
+      makeNode('span','resource-description',item.description||''),
+      makeNode('span','resource-action',kind==='examen'?'Abrir examen ↗':'Abrir material ↗')
+    );
+    list.append(link);
+  });
+}
+function renderRoute(moveFocus=false) {
+  if(!authenticated) return;
+  const match=window.location.hash.match(/^#capitulo-(\d+)$/);
+  const chapter=match?CHAPTERS.find(item=>item.number===Number(match[1])&&item.active):null;
+  byId('overviewView').hidden=Boolean(chapter);
+  byId('chapterView').hidden=!chapter;
+  if(chapter) {
+    byId('chapterNumber').textContent='Capítulo '+String(chapter.number).padStart(2,'0');
+    byId('chapterTitle').textContent=chapter.title;
+    byId('chapterEnglish').textContent=chapter.english;
+    byId('emptyChapter').hidden=chapter.materials.length+chapter.exams.length>0;
+    byId('materialsSection').hidden=chapter.materials.length===0;
+    byId('examsSection').hidden=chapter.exams.length===0;
+    byId('examsCount').textContent=chapter.exams.length+' exámenes · 20 preguntas cada uno';
+    renderResources(byId('materialsList'),chapter.materials,'material');
+    renderResources(byId('examsList'),chapter.exams,'examen');
+    document.title='Capítulo '+chapter.number+' · '+chapter.title+' | Módulo 7';
+    if(moveFocus) byId('chapterTitle').focus();
+  } else {
+    document.title='Módulo 7 · Prácticas de mantenimiento';
+    if(moveFocus) byId('overviewTitle').focus();
+  }
+  if(moveFocus) window.scrollTo({top:0,behavior:'smooth'});
+}
+function enterPortal() {
+  authenticated=true; byId('loginView').hidden=true; byId('portalView').hidden=false;
+  byId('password').value=''; byId('loginError').hidden=true;
+  renderRoute(true);
+}
+byId('loginForm').addEventListener('submit',event=>{
+  event.preventDefault();
+  const username=byId('username').value.trim().toLowerCase();
+  const password=byId('password').value;
+  if(username===ACCESS.username && password===ACCESS.password) {
+    rememberSession(true); enterPortal();
+  } else {
+    byId('loginError').hidden=false; byId('password').focus(); byId('password').select();
+  }
+});
+byId('togglePassword').addEventListener('click',()=>{
+  const show=byId('password').type==='password';
+  byId('password').type=show?'text':'password';
+  byId('togglePassword').textContent=show?'Ocultar':'Mostrar';
+  byId('togglePassword').setAttribute('aria-label',show?'Ocultar contraseña':'Mostrar contraseña');
+  byId('togglePassword').setAttribute('aria-pressed',String(show));
+});
+byId('logoutButton').addEventListener('click',()=>{
+  authenticated=false; rememberSession(false); byId('portalView').hidden=true; byId('loginView').hidden=false;
+  byId('loginForm').reset(); byId('loginError').hidden=true; byId('password').type='password';
+  byId('togglePassword').textContent='Mostrar'; byId('togglePassword').setAttribute('aria-label','Mostrar contraseña'); byId('togglePassword').setAttribute('aria-pressed','false');
+  window.location.hash=''; document.title='Acceso | Módulo 7'; byId('username').focus();
+});
+byId('backButton').addEventListener('click',()=>{window.location.hash='';});
+window.addEventListener('hashchange',()=>renderRoute(true));
+renderChapterCards();
+if(readSession()) enterPortal(); else byId('username').focus();
+</script>
+</body>
+</html>
